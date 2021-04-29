@@ -1,0 +1,55 @@
+@font-face{
+	font-family: mazius;
+	src: url(./MAZIUSREVIEW.otf);
+
+}
+
+
+@font-face{
+	font-family:maziusItalic;
+	src:url(MAZIUSREVIEWitalic.otf);
+}
+
+html{
+	font-family:mazius;
+	background-color:#6C5A38;
+	color:#F9E9E9;
+}
+
+h1{
+	font-size:40vh;
+/*	position:absolute;*/
+	top:0.1vh;
+	left:0.1vw;
+	line-height: 35vh;
+	padding;top:none;
+}
+
+button{
+	background-color:#C2BB49;
+	border:none;
+	font-family: maziusItalic;
+	font-size:7vw;
+	color:#F9E9E9;
+	position:absolute;
+	left:600px;
+	top:825px;
+
+}
+
+button:hover{
+	color:#6C5A38;
+}
+
+input{
+	background-color:#C2BB49;
+	border:none;
+	font-family: maziusItalic;
+	font-size:5vw;
+	color:#F9E9E9;
+	width:99vw;
+	text-align: center;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
