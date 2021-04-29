@@ -1,3 +1,7 @@
+let usflowers = "./images/usflowers.png";
+
+
+
 navigator.geolocation
 let bin = document.querySelector('#location');
 function showLocation(pos) {
@@ -10,7 +14,8 @@ let input = document.querySelector('#request-location');
 input.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
   navigator.geolocation.getCurrentPosition(showLocation, showError);
-  console.log(showLocation);}
+  let flowers = document.createElement("img");
+flowers.src = usflowers;}
 
 });
 

@@ -7,7 +7,7 @@
 
 @font-face{
 	font-family:maziusItalic;
-	src:url(MAZIUSREVIEWitalic.otf);
+	src:url(MAZIUSREVIEWItalic.otf);
 }
 
 @font-face{
@@ -82,10 +82,18 @@ input{
 	align-items:center;
 	height:auto;
 	position:absolute;
-	top:2000px;
+	/*top:2000px;*/
 
 
 }
+
+img{
+z-index: 200;
+min-height: 100vh;
+min-width:100vw;
+}
+
+
 
 
 #location{
