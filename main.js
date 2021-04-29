@@ -6,8 +6,11 @@ function showLocation(pos) {
 function showError(error) {
     bin.innerHTML = error.message;
 }
-let button = document.querySelector('#request-location');
-button.addEventListener('click', function () {
+let input = document.querySelector('#request-location');
+input.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
   navigator.geolocation.getCurrentPosition(showLocation, showError);
-  console.log(showLocation);
+  console.log(showLocation);}
+
 });
+

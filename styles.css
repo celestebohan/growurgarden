@@ -30,6 +30,11 @@ h1{
 	font-weight:normal;
 }
 
+h2{
+	color:#C2BB49;
+	font-family:maziusItalic;
+	font-size:35vh;
+}
 h3{
 	font-size:9vh;
 	border-radius:50%;
