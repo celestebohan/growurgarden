@@ -54,16 +54,17 @@ h1{
 	line-height: 21vw;
 	padding: 0;
 	font-weight:normal;
+	margin-top:-60pt;
 }
 
 h2{
 	color:#C2BB49;
 	font-family:maziusItalic;
-	font-size:20vh;
+	font-size:12vh;
 	z-index: -100;
 }
 h3{
-	animation:blink 1s infinite ease-in-out;
+	animation:blink 1s infinite linear;
 	font-size:9vh;
 	border-radius:50%;
 	color:#F9E9E9;
@@ -75,10 +76,16 @@ h3{
 	align-items:center;
 	text-align:center;
 	position:absolute;
-	right:10vw;
-	top:15vh;
+	right:8vw;
+	top:-7vh;
 	transform:rotate(345deg);
 	
+}
+
+h4{
+	color:#F9E9E9;
+	font-size:7vh;
+	z-index: 400;
 }
 
 button{
@@ -89,7 +96,7 @@ button{
 	color:#F9E9E9;
 	position:absolute;
 	left:600px;
-	top:825px;
+	top:600px;
 	z-index: 100;
 
 }
@@ -112,6 +119,7 @@ input{
 	height:auto;
 	position:absolute;
 	/*top:2000px;*/
+	margin-bottom:5vh;
 
 
 }
@@ -121,6 +129,7 @@ z-index: 500;
 min-height: 100vh;
 min-width:100vw;
 animation:fadein 5s infinite;
+top:-200px;
 }
 
 
@@ -129,4 +138,9 @@ animation:fadein 5s infinite;
 #location{
 	color:#C2BB49;
 	font-family:maziusItalic;
+}
+
+#flower{
+	z-index: 200;
+
 }
