@@ -2,6 +2,11 @@
 	0%{background-color:#C2BB49;
 		color:#F9E9E9;}
 
+	25%{background-color:#F9E9E9;
+		color:#C2BB49;}
+
+	50%{background-color:#C2BB49;
+		color:#F9E9E9;}
 	75%{background-color:#F9E9E9;
 		color:#C2BB49;}
 
@@ -11,6 +16,14 @@
 	}
 }
 
+
+@keyframes fadein{
+	0%{opacity:0%;}
+	25%{opacity:25%;}
+	50%{opacity:50%;}
+	75%{opacity:75%;}
+	100%{opacity:100%;}
+}
 @font-face{
 	font-family: mazius;
 	src: url(./MAZIUSREVIEW.otf);
@@ -34,22 +47,23 @@ html{
 }
 
 h1{
-	font-size:40vh;
-/*	position:absolute;*/
+	font-size:23vw;
+	/*position:absolute;*/
 	top:0.1vh;
 	left:0.1vw;
-	line-height: 35vh;
-	padding-top: 0;
+	line-height: 21vw;
+	padding: 0;
 	font-weight:normal;
 }
 
 h2{
 	color:#C2BB49;
 	font-family:maziusItalic;
-	font-size:35vh;
+	font-size:20vh;
+	z-index: -100;
 }
 h3{
-	animation:blink 0.5s infinite;
+	animation:blink 1s infinite ease-in-out;
 	font-size:9vh;
 	border-radius:50%;
 	color:#F9E9E9;
@@ -103,9 +117,10 @@ input{
 }
 
 img{
-z-index: 200;
+z-index: 500;
 min-height: 100vh;
 min-width:100vw;
+animation:fadein 5s infinite;
 }
 
 
