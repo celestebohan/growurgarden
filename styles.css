@@ -61,6 +61,8 @@ h2{
 	font-family:maziusItalic;
 	font-size:12vh;
 	z-index: -100;
+		font-weight:normal;
+
 }
 h3{
 	animation:blink 1s infinite linear;
@@ -78,6 +80,8 @@ h3{
 	right:8vw;
 	top:-7vh;
 	transform:rotate(345deg);
+		font-weight:normal;
+
 	
 }
 
@@ -85,6 +89,8 @@ h4{
 	color:#F9E9E9;
 	font-size:7vh;
 	z-index: 400;
+		font-weight:normal;
+
 }
 
 button{
@@ -122,6 +128,10 @@ input{
 
 
 }
+/*
+::placeholder{
+	color:#6C5A38;
+}*/
 
 img{
 z-index: 500;
@@ -139,7 +149,36 @@ top:-200px;
 	font-family:maziusItalic;
 }
 
-#flower{
+#us{
 	z-index: 200;
 
 }
+
+
+
+
+@media (max-width:500px) {
+
+h1{
+	margin-top:0;
+}
+
+h3{
+	width:18vh;
+	font-size:4vh;
+	top:-2vh;
+	right:3vh;
+
+}
+button{
+	
+	font-size:7vw;
+	position:absolute;
+	left:250px;
+	top:263px;
+
+}
+
+
+
+	}
