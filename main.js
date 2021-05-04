@@ -34,7 +34,7 @@ let input = document.querySelector('#request-location');
 input.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
   navigator.geolocation.getCurrentPosition(showLocation, showError);
-  document.getElementById("us").scrollIntoView();;
+  document.getElementById("h2").scrollIntoView();;
   // document.getElementById('us').scrollIntoView();
   // if(`${pos.coords.latitude}, ${pos.coords.longitude}` == '37.0902° N, 95.7129° W'){
  
