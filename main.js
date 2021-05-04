@@ -16,28 +16,65 @@ function showImg(img) {
 navigator.geolocation
 let bin = document.querySelector('#location');
 function showLocation(pos) {
-  bin.innerHTML = `<h4>Your location is: ${pos.coords.latitude}, ${pos.coords.longitude} </h4><h2>welcome to your garden!</h2>`
+  bin.innerHTML = `<h4>Your location is:<br> ${pos.coords.latitude}, ${pos.coords.longitude} </h4><h2>welcome to your garden!</h2>`
    if(pos.coords.longitude > -168 && pos.coords.longitude < -66 && pos.coords.latitude <71 && pos.coords.latitude > 24){
       
 
     showImg(us)
-    img.scrollIntoView();
-img.classList.add('fade-in');
-img.addEventListener('animationend', () => {
-    img.classList.remove('fade-in');
+
+    us.classList.add('fade-in');
+us.addEventListener('animationend', () => {
+    us.classList.remove('fade-in');
 }, { once: true });
+
+
     us.scrollIntoView({behavior: "smooth"});
+
+
+ 
+
+
+
   }; if (pos.coords.longitude > -142 && pos.coords.longitude < -55 && pos.coords.latitude <69 && pos.coords.latitude > 49){
     showImg(canada);
-    canada.scrollIntoView();
+
+        canada.classList.add('fade-in');
+canada.addEventListener('animationend', () => {
+    canada.classList.remove('fade-in');
+}, { once: true });
+
+
+    canada.scrollIntoView({behavior: "smooth"});
+
+
+
   }; if (pos.coords.longitude > -144 && pos.coords.longitude < -94 && pos.coords.latitude <26 && pos.coords.latitude > 15){
     showImg(mexico);
-    mexico.scrollIntoView();
+
+
+        mexico.classList.add('fade-in');
+mexico.addEventListener('animationend', () => {
+    mexico.classList.remove('fade-in');
+}, { once: true });
+
+    mexico.scrollIntoView({behavior: "smooth"});
   }; if (pos.coords.longitude > 76 && pos.coords.longitude < 121 && pos.coords.latitude <42 && pos.coords.latitude > 22){
     showImg(china);
+
+        china.classList.add('fade-in');
+china.addEventListener('animationend', () => {
+    china.classList.remove('fade-in');
+}, { once: true });
+
     china.scrollIntoView({behavior: "smooth"});
   };if (pos.coords.longitude > 76 && pos.coords.longitude < 121 && pos.coords.latitude <42 && pos.coords.latitude > 22){
     showImg(southafrica);
+
+        southafrica.classList.add('fade-in');
+southafrica.addEventListener('animationend', () => {
+    southafrica.classList.remove('fade-in');
+}, { once: true });
+
     southafrica.scrollIntoView({behavior: "smooth"});
   };
  };
@@ -57,6 +94,7 @@ input.addEventListener('keypress', function (e) {
 }
 
 });
+
 
 
 
