@@ -68,6 +68,10 @@ h2{
 	font-size:12vh;
 	z-index: -100;
 		font-weight:normal;
+		position:absolute;
+text-align:right;
+		top: 1400px;
+		right:20px;
 
 }
 h3{
@@ -93,9 +97,11 @@ h3{
 
 h4{
 	color:#F9E9E9;
-	font-size:7vh;
-	z-index: 400;
-		font-weight:normal;
+	font-size:12vh;
+	z-index: -4;
+	font-weight:normal;
+	position:absolute;
+	top:1000px;
 
 }
 

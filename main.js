@@ -2,8 +2,9 @@ var us = document.getElementById("us");
 var canada = document.getElementById("canada");
 var mexico = document.getElementById("mexico");
 var china = document.getElementById("china");
+var southafrica = document.getElementById("southafrica");
 
-var imgArray = [us, canada, mexico, china];
+var imgArray = [us, canada, mexico, china, southafrica];
 function showImg(img) {
   for (i = 0; i < imgArray.length; i++) {
     imgArray[i].style.display = "none";
@@ -18,9 +19,10 @@ function showLocation(pos) {
   bin.innerHTML = `<h4>Your location is: ${pos.coords.latitude}, ${pos.coords.longitude} </h4><h2>welcome to your garden!</h2>`
    if(pos.coords.longitude > -168 && pos.coords.longitude < -66 && pos.coords.latitude <71 && pos.coords.latitude > 24){
       
-    showImg(us);
+
+    showImg(us)
+
     us.scrollIntoView({behavior: "smooth"});
-    img.classList.add('fade-in');
   }; if (pos.coords.longitude > -142 && pos.coords.longitude < -55 && pos.coords.latitude <69 && pos.coords.latitude > 49){
     showImg(canada);
     canada.scrollIntoView();
@@ -30,6 +32,9 @@ function showLocation(pos) {
   }; if (pos.coords.longitude > 76 && pos.coords.longitude < 121 && pos.coords.latitude <42 && pos.coords.latitude > 22){
     showImg(china);
     china.scrollIntoView({behavior: "smooth"});
+  };if (pos.coords.longitude > 76 && pos.coords.longitude < 121 && pos.coords.latitude <42 && pos.coords.latitude > 22){
+    showImg(southafrica);
+    southafrica.scrollIntoView({behavior: "smooth"});
   };
  };
 function showError(error) {
