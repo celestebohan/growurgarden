@@ -23,6 +23,12 @@
 	75%{opacity:75%;}
 	100%{opacity:100%;}
 }
+
+
+.fade-in {
+    animation: fadein 0.3s ease-in-out;
+}
+
 @font-face{
 	font-family: mazius;
 	src: url(./MAZIUSREVIEW.otf);
@@ -110,9 +116,7 @@ button:hover{
 	color:#6C5A38;
 }
 
-#enter{
-	display:none;
-}
+
 
 input{
 	background-color:#C2BB49;
@@ -185,15 +189,6 @@ button{
 
 }
 
-/*#enter{
-	display: inline;
-	z-index: 500;
-	top:600px;
-	right:300px;
-	font-size:3vw;
-	position:absolute;
-
-}*/
 
 
 	}

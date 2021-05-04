@@ -17,9 +17,10 @@ let bin = document.querySelector('#location');
 function showLocation(pos) {
   bin.innerHTML = `<h4>Your location is: ${pos.coords.latitude}, ${pos.coords.longitude} </h4><h2>welcome to your garden!</h2>`
    if(pos.coords.longitude > -168 && pos.coords.longitude < -66 && pos.coords.latitude <71 && pos.coords.latitude > 24){
-  		
-  	showImg(us);
+      
+    showImg(us);
     us.scrollIntoView({behavior: "smooth"});
+    img.classList.add('fade-in');
   }; if (pos.coords.longitude > -142 && pos.coords.longitude < -55 && pos.coords.latitude <69 && pos.coords.latitude > 49){
     showImg(canada);
     canada.scrollIntoView();
