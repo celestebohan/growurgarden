@@ -21,7 +21,11 @@ function showLocation(pos) {
       
 
     showImg(us)
-
+    img.scrollIntoView();
+img.classList.add('fade-in');
+img.addEventListener('animationend', () => {
+    img.classList.remove('fade-in');
+}, { once: true });
     us.scrollIntoView({behavior: "smooth"});
   }; if (pos.coords.longitude > -142 && pos.coords.longitude < -55 && pos.coords.latitude <69 && pos.coords.latitude > 49){
     showImg(canada);

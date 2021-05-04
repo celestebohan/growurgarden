@@ -71,11 +71,12 @@ h2{
 		position:absolute;
 text-align:right;
 		top: 1400px;
-		right:20px;
+		right:10vh;
 
 }
 h3{
 	animation:blink 1s infinite linear;
+	animation-delay:0.7;
 	font-size:9vh;
 	border-radius:50%;
 	color:#F9E9E9;
@@ -102,6 +103,39 @@ h4{
 	font-weight:normal;
 	position:absolute;
 	top:1000px;
+
+}
+
+h5{
+	font-size:5vh;
+	animation:blink 1s infinite linear;
+	animation-delay:1.7s;
+	background-color:#C2BB49;
+	max-width:18vw;
+	text-align:center;
+	font-family:maziusxtra;
+	position:absolute;
+	top:57vh;
+	left:17vw;
+	transform:rotate(15deg);
+	border-radius:50%;
+
+}
+
+h6{
+	font-size:5vh;
+	animation:blink 1s infinite linear;
+	animation-delay:2.9s;
+	background-color:#C2BB49;
+	max-width:15vw;
+	height:10vw;
+	text-align:center;
+	font-family:maziusxtra;
+	position:absolute;
+	top:10vh;
+	left:40vw;
+	transform:rotate(345deg);
+	border-radius:50%;
 
 }
 
