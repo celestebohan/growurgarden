@@ -19,12 +19,16 @@ function showLocation(pos) {
    if(pos.coords.longitude > -168 && pos.coords.longitude < -66 && pos.coords.latitude <71 && pos.coords.latitude > 24){
   		
   	showImg(us);
+    us.scrollIntoView({behavior: "smooth"});
   }; if (pos.coords.longitude > -142 && pos.coords.longitude < -55 && pos.coords.latitude <69 && pos.coords.latitude > 49){
     showImg(canada);
+    canada.scrollIntoView();
   }; if (pos.coords.longitude > -144 && pos.coords.longitude < -94 && pos.coords.latitude <26 && pos.coords.latitude > 15){
     showImg(mexico);
+    mexico.scrollIntoView();
   }; if (pos.coords.longitude > 76 && pos.coords.longitude < 121 && pos.coords.latitude <42 && pos.coords.latitude > 22){
     showImg(china);
+    china.scrollIntoView({behavior: "smooth"});
   };
  };
 function showError(error) {
@@ -34,7 +38,7 @@ let input = document.querySelector('#request-location');
 input.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
   navigator.geolocation.getCurrentPosition(showLocation, showError);
-  document.getElementById("h2").scrollIntoView();;
+  // document.getElementById("h2").scrollIntoView();;
   // document.getElementById('us').scrollIntoView();
   // if(`${pos.coords.latitude}, ${pos.coords.longitude}` == '37.0902° N, 95.7129° W'){
  
