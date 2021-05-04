@@ -3,6 +3,8 @@ var canada = document.getElementById("canada");
 var mexico = document.getElementById("mexico");
 var china = document.getElementById("china");
 var southafrica = document.getElementById("southafrica");
+// var algeria = document.getElementById("algeria");
+// var thailand = document.getElementById("thailand");
 
 var imgArray = [us, canada, mexico, china, southafrica];
 function showImg(img) {
