@@ -1,3 +1,6 @@
+
+
+
 var us = document.getElementById("us");
 var canada = document.getElementById("canada");
 var mexico = document.getElementById("mexico");
@@ -22,6 +25,7 @@ function showImg(img) {
   }
   img.style.display = "block";
 }
+
 
 
 navigator.geolocation
@@ -198,6 +202,15 @@ let input = document.querySelector('#request-location');
 input.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
   navigator.geolocation.getCurrentPosition(showLocation, showError);
+
+// document.getElementById("button").style.display = "inline";
+  document.querySelector("button.more").style.display="inline";
+moreflowers.addEventListener('click', function(e) {
+
+
+showImg((imgArray[Math.floor(Math.random() * imgArray.length)]));
+
+})
   // document.getElementById("h2").scrollIntoView();;
   // document.getElementById('us').scrollIntoView();
   // if(`${pos.coords.latitude}, ${pos.coords.longitude}` == '37.0902° N, 95.7129° W'){
@@ -207,7 +220,6 @@ input.addEventListener('keypress', function (e) {
 }
 
 });
-
 
 
 

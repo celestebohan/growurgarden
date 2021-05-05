@@ -148,6 +148,31 @@ h6{
 
 }
 
+
+button:hover{
+	color:#6C5A38;
+}
+
+
+
+button.more{
+	display: none;
+	position:absolute;
+	bottom:-1000px;
+	cursor:pointer;
+	background-color:#C2BB49;
+	border:none;
+	font-family: maziusItalic;
+	font-size:3vw;
+	color:#FFE7E7;
+	cursor:pointer;
+}
+
+button:hover{
+	color:#6C5A38;
+}
+
+
 button.start{
 	background-color:#C2BB49;
 	border:none;
@@ -162,16 +187,12 @@ button.start{
 
 }
 
-button:hover{
-	color:#6C5A38;
-}
+/*button{
+display:inline;
+z-index: 500;
+bottom:25vh;
+}*/
 
-button.save{
-	display:none;
-	position:absolute;
-	bottom:25vw;
-	cursor:pointer;
-}
 
 input{
 	background-color:#C2BB49;
