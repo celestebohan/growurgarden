@@ -100,7 +100,7 @@ thailand.addEventListener('animationend', () => {
 }, { once: true });
 
     thailand.scrollIntoView({behavior: "smooth"});
- };if (pos.coords.longitude > 144 && pos.coords.longitude < 153 && pos.coords.latitude <-11 && pos.coords.latitude > -38){
+ };if (pos.coords.longitude > 114 && pos.coords.longitude < 153 && pos.coords.latitude <-11 && pos.coords.latitude > -38){
     showImg(australia);
 
         australia.classList.add('fade-in');
@@ -127,7 +127,7 @@ netherlands.addEventListener('animationend', () => {
 }, { once: true });
 
     netherlands.scrollIntoView({behavior: "smooth"});
- };if (pos.coords.longitude > 28 && pos.coords.longitude < -171 && pos.coords.latitude <76 && pos.coords.latitude > 87){
+ };if (pos.coords.longitude > 28 && pos.coords.longitude < -171 && pos.coords.latitude <76 && pos.coords.latitude > 50){
     showImg(russia);
 
         russia.classList.add('fade-in');
@@ -137,6 +137,8 @@ russia.addEventListener('animationend', () => {
 
     russia.scrollIntoView({behavior: "smooth"});
  };
+
+};
 function showError(error) {
     bin.innerHTML = error.message;
 }

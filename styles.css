@@ -1,21 +1,21 @@
 @keyframes blink {
     0% {
         background-color: #C2BB49;
-        color: #F9E9E9;
+        color: #FFE7E7;
     }
  
     25% {
-        background-color: #F9E9E9;
+        background-color: #FFE7E7;
         color: #C2BB49;
     }
  
     50% {
         background-color: #C2BB49;
-        color: #F9E9E9;
+        color: #FFE7E7;
     }
  
     75% {
-        background-color: #F9E9E9;
+        background-color: #FFE7E7;
         color: #C2BB49;
     }
 }
@@ -55,7 +55,7 @@
 html{
 	font-family:mazius;
 	background-color:#6C5A38;
-	color:#F9E9E9;
+	color:#FFE7E7;
 	cursor:default;
 }
 
@@ -88,7 +88,7 @@ h3{
 	animation-delay:0.7;
 	font-size:9vh;
 	border-radius:50%;
-	color:#F9E9E9;
+	color:#FFE7E7;
 	font-family:maziusxtra;
 	background-color:#C2BB49;
 	width:35vh;
@@ -106,7 +106,7 @@ h3{
 }
 
 h4{
-	color:#F9E9E9;
+	color:#FFE7E7;
 	font-size:12vh;
 	z-index: -4;
 	font-weight:normal;
@@ -124,7 +124,7 @@ h5{
 	text-align:center;
 	font-family:maziusxtra;
 	position:absolute;
-	top:57vh;
+	top:61vh;
 	left:17vw;
 	transform:rotate(15deg);
 	border-radius:50%;
@@ -141,7 +141,7 @@ h6{
 	text-align:center;
 	font-family:maziusxtra;
 	position:absolute;
-	top:10vh;
+	top:12vh;
 	left:40vw;
 	transform:rotate(345deg);
 	border-radius:50%;
@@ -153,7 +153,7 @@ button.start{
 	border:none;
 	font-family: maziusItalic;
 	font-size:7vw;
-	color:#F9E9E9;
+	color:#FFE7E7;
 	position:absolute;
 	left:600px;
 	top:600px;
@@ -178,7 +178,7 @@ input{
 	border:none;
 	font-family: maziusItalic;
 	font-size:5vw;
-	color:#F9E9E9;
+	color:#FFE7E7;
 	width:99vw;
 	text-align: center;
 	display: flex;
