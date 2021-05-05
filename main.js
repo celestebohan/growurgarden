@@ -159,7 +159,7 @@ tanzania.addEventListener('animationend', () => {
 }, { once: true });
 
     tanzania.scrollIntoView({behavior: "smooth"});
- };
+
 
 };if (pos.coords.longitude > 27 && pos.coords.longitude < 44 && pos.coords.latitude <41 && pos.coords.latitude > 36){
     showImg(turkey);
@@ -189,6 +189,8 @@ italy.addEventListener('animationend', () => {
 
     italy.scrollIntoView({behavior: "smooth"});
  };
+
+};
 function showError(error) {
     bin.innerHTML = error.message;
 }
