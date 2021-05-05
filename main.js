@@ -9,8 +9,13 @@ var australia = document.getElementById("australia");
 var greece = document.getElementById("greece");
 var netherlands = document.getElementById("netherlands");
 var russia = document.getElementById("russia");
+var serbia = document.getElementById("serbia");
+var tanzania = document.getElementById("tanzania");
+var turkey = document.getElementById("turkey");
+var india = document.getElementById("india");
+var italy = document.getElementById("italy");
 
-var imgArray = [us, canada, mexico, china, southafrica, algeria, thailand, australia, greece, netherlands, russia];
+var imgArray = [us, canada, mexico, china, southafrica, algeria, thailand, australia, greece, netherlands, russia, serbia, tanzania, turkey, india, italy];
 function showImg(img) {
   for (i = 0; i < imgArray.length; i++) {
     imgArray[i].style.display = "none";
@@ -136,9 +141,54 @@ russia.addEventListener('animationend', () => {
 }, { once: true });
 
     russia.scrollIntoView({behavior: "smooth"});
+ };if (pos.coords.longitude > 18 && pos.coords.longitude < 22 && pos.coords.latitude <46 && pos.coords.latitude > 42){
+    showImg(serbia);
+
+        serbia.classList.add('fade-in');
+serbia.addEventListener('animationend', () => {
+    serbia.classList.remove('fade-in');
+}, { once: true });
+
+    serbia.scrollIntoView({behavior: "smooth"});
+ };if (pos.coords.longitude > 29 && pos.coords.longitude < 39 && pos.coords.latitude <-1.7 && pos.coords.latitude > -11){
+    showImg(tanzania);
+
+        tanzania.classList.add('fade-in');
+tanzania.addEventListener('animationend', () => {
+    tanzania.classList.remove('fade-in');
+}, { once: true });
+
+    tanzania.scrollIntoView({behavior: "smooth"});
  };
 
-};
+};if (pos.coords.longitude > 27 && pos.coords.longitude < 44 && pos.coords.latitude <41 && pos.coords.latitude > 36){
+    showImg(turkey);
+
+        turkey.classList.add('fade-in');
+turkey.addEventListener('animationend', () => {
+    turkey.classList.remove('fade-in');
+}, { once: true });
+
+    turkey.scrollIntoView({behavior: "smooth"});
+ };if (pos.coords.longitude > 68 && pos.coords.longitude < 86 && pos.coords.latitude <26 && pos.coords.latitude > 8){
+    showImg(india);
+
+        india.classList.add('fade-in');
+india.addEventListener('animationend', () => {
+    india.classList.remove('fade-in');
+}, { once: true });
+
+    india.scrollIntoView({behavior: "smooth"});
+ };if (pos.coords.longitude > 7 && pos.coords.longitude < 18 && pos.coords.latitude <46 && pos.coords.latitude > 14){
+    showImg(italy);
+
+        italy.classList.add('fade-in');
+italy.addEventListener('animationend', () => {
+    italy.classList.remove('fade-in');
+}, { once: true });
+
+    italy.scrollIntoView({behavior: "smooth"});
+ };
 function showError(error) {
     bin.innerHTML = error.message;
 }
