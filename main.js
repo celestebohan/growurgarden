@@ -204,7 +204,7 @@ input.addEventListener('keypress', function (e) {
   navigator.geolocation.getCurrentPosition(showLocation, showError);
 
 // document.getElementById("button").style.display = "inline";
-  document.querySelector("button.more").style.display="inline";
+  document.querySelector("button.more").style.display="flex";
 moreflowers.addEventListener('click', function(e) {
 
 

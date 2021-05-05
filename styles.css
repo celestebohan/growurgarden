@@ -166,6 +166,8 @@ button.more{
 	font-size:3vw;
 	color:#FFE7E7;
 	cursor:pointer;
+	align-items:center;
+	justify-content:center;
 }
 
 button:hover{
