@@ -202,7 +202,7 @@ function showError(error) {
 }
 let input = document.querySelector('#request-location');
 input.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
+    if (e.key === '13') {
   navigator.geolocation.getCurrentPosition(showLocation, showError);
 
 // document.getElementById("button").style.display = "inline";
