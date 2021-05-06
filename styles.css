@@ -175,9 +175,7 @@ button.more{
 	animation: fade-in, 1s;
 }
 
-button:hover{
-	color:#6C5A38;
-}
+
 
 
 button.start{
@@ -192,6 +190,10 @@ button.start{
 	z-index: 100;
 	cursor:pointer;
 
+}
+
+button:hover{
+	color:#6C5A38;
 }
 
 /*button{
