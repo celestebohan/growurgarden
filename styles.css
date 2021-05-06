@@ -168,7 +168,7 @@ button.more{
 	cursor:pointer;
 	align-items:center;
 	justify-content:center;
-	animation: fadein;
+	animation: fade-in, 1s;
 }
 
 button:hover{
@@ -255,22 +255,29 @@ top:-200px;
 	100%{display:none;}
 }
 
+
+button.more{
+	bottom:-100vh;
+	font-size:5.5vw;
+}
 button.start{
 	
 	font-size:7vw;
 	position:absolute;
-	left:5vw
-	top:45vh;
+	left:45vw;
+	top:82vh;
 
 }
 
 h1{
 	margin-top:0;
+	line-height:33vh;
 }
 
 h2{
 font-size:6vw;
-	top:100vh;
+position:absolute;
+	bottom:10vh;
 	right:3vw;
 }
 
@@ -285,15 +292,24 @@ h3{
 
 h4{
 	font-size:5vw;
-	top:75vh;
+	bottom:100vh;
 }
 h5{
-	font-size:2vh;
-	top:25vh;
+	font-size:5vh;
+	top:20vh;
+	max-width:30vh;
+	font-weight:normal;
+
 }
 h6{
-	top:8vh;
-	font-size:2vh;
+	top:55vh;
+	font-size:3.5vh;
+	max-width:25vh;
+	min-height:20vw;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	font-weight:normal;
 	
 
 }
