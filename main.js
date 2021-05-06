@@ -1,6 +1,3 @@
-
-
-
 var us = document.getElementById("us");
 var canada = document.getElementById("canada");
 var mexico = document.getElementById("mexico");
@@ -17,8 +14,13 @@ var tanzania = document.getElementById("tanzania");
 var turkey = document.getElementById("turkey");
 var india = document.getElementById("india");
 var italy = document.getElementById("italy");
+var flowers1 = document.getElementById("flowers1");
+var flowers2 = document.getElementById("flowers2");
+var flowers3 = document.getElementById("flowers3");
+var flowers4 = document.getElementById("flowers4");
+var flowers5 = document.getElementById("flowers5");
 
-var imgArray = [us, canada, mexico, china, southafrica, algeria, thailand, australia, greece, netherlands, russia, serbia, tanzania, turkey, india, italy];
+var imgArray = [us, canada, mexico, china, southafrica, algeria, thailand, australia, greece, netherlands, russia, serbia, tanzania, turkey, india, italy, flowers1, flowers2, flowers3, flowers4, flowers5];
 function showImg(img) {
   for (i = 0; i < imgArray.length; i++) {
     imgArray[i].style.display = "none";
