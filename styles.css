@@ -82,6 +82,7 @@ text-align:right;
 		right:10vh;
 		padding-top:2vh;
 
+
 }
 h3{
 	animation:blink 1s infinite linear;
@@ -91,14 +92,14 @@ h3{
 	color:#FFE7E7;
 	font-family:maziusxtra;
 	background-color:#C2BB49;
-	width:35vh;
+	width:39vh;
 	display: flex;
 	justify-content:center;
 	align-items:center;
 	text-align:center;
 	position:absolute;
 	right:8vw;
-	top:-7vh;
+	top:-7.5vh;
 	transform:rotate(345deg);
 		font-weight:normal;
 
@@ -112,6 +113,7 @@ h4{
 	font-weight:normal;
 	position:absolute;
 	top:1000px;
+	font-weight:normal;
 
 }
 
@@ -124,10 +126,11 @@ h5{
 	text-align:center;
 	font-family:maziusxtra;
 	position:absolute;
-	top:61vh;
+	top:58vh;
 	left:17vw;
 	transform:rotate(15deg);
 	border-radius:50%;
+	font-weight:normal;
 
 }
 
@@ -141,10 +144,11 @@ h6{
 	text-align:center;
 	font-family:maziusxtra;
 	position:absolute;
-	top:12vh;
+	top:11vh;
 	left:40vw;
 	transform:rotate(345deg);
 	border-radius:50%;
+	font-weight:normal;
 
 }
 
@@ -184,7 +188,7 @@ button.start{
 	color:#FFE7E7;
 	position:absolute;
 	left:600px;
-	top:600px;
+	top: 83vh;
 	z-index: 100;
 	cursor:pointer;
 
